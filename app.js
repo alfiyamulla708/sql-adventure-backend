@@ -579,7 +579,7 @@ app.post("/generateCertificate", async (req, res) => {
       console.log("Successfully uploaded certificate to Supabase:", data);
 
       // Update your database record with the certificate name (if needed)
-      const certificateLink = `https://ddlypxwpahwjzazfywmb.supabase.co/storage/v1/object/public/sql-adventure//${certificateName}`;
+      const certificateLink = `https://nleyuffkuxkklxwoqmuv.supabase.co/storage/v1/object/public/sql-adventure//${certificateName}`;
       await GameModal.findOneAndUpdate(
         { email },
         { certificate: certificateLink },
